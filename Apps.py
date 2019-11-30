@@ -5,17 +5,19 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    kota = requests.get('http://localhost:5010/kota/' + 'bandung').json()
-    transport = requests.get('http://localhost:5020/sekalitrip/' + 'jakarta' + '/' + 'bandung').json()
-    data = []
-    data.append(kota)
-    data.append(transport)
-    return render_template('index.html', data = data)
+    # city = requests.get('http://localhost:5010/kota/' + 'bandung').json()
+    # transport = requests.get('http://localhost:5020/sekalitrip/' + 'jakarta' + '/' + 'bandung').json()
+    # data = []
+    # data.append(city)
+    # data.append(transport)
+    # return render_template('home.html', data = data)
 
 @app.route('/kota/<city>', methods=['GET'])
 def kota(city):
     kota = requests.get('http://localhost:5010/kota/' + city)
-    return kota
+    data = []
+    data.append(kota)
+    return render_template('page.html', data = data)
 
 @app.route('/<asal>/<tujuan>')
 def info_transport(asal, tujuan):
