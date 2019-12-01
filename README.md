@@ -1,6 +1,6 @@
 # Aplikasi-TST
 Mata Kuliah II3160 - Teknologi Sistem Terintegrasi\
-Firdausi Aditya D - 18217001
+Firdausi Aditya D - 18217001\
 Daeng Muhammad Yusuf Aqsha Alfarabi - 18217045
 
 ## Endpoint
