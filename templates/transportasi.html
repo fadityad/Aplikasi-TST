@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transportasi</title>
+    
+</head>
+<body>
+      
+    <section class="hero is-large" style="background-color: #18C7FA; padding: 15px 50px 15px; border-radius: 5px;">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title" style="text-align:center; color:#FFFF;">
+                Transportasi untuk Perjalanan Anda
+            </h1>
+          </div>
+        </div>
+      </section> 
+
+      <nav class="navbar" role="navigation" aria-label="main navigation">      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href='http://localhost:5000' class="navbar-item">
+              Kembali
+            </a>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <h2>Kendaraan Sewa</h2>
+            <table name="tabel sewa mobil" style=" font-family: arial, sans-serif; border-collapse: collapse; width: 100%; text-align: left;">
+                    <tr>
+                    <th>Nama Mobil</th>
+                    <th>Harga</th>
+                    </tr>
+                    {% for key,value in data %}
+                    <tr>
+                    <td>{{ value }}</td> 
+                    <td>{{ key }}</td>
+                    </tr>
+                    {% endfor %}
+            </table>
+      <br>
+      <h2>Kendaraan Online</h2>
+                  <table nama="tabel transportasi online" style=" font-family: arial, sans-serif; border-collapse: collapse; width: 100%; text-align: left;">
+                    <tr>
+                    <th>Jarak</th>
+                    <th>Ojek Online</th>
+                    <th>Taksi Online</th>
+                    <th>Bluebird Online</th>
+                    </tr>
+                              
+                    <tr>
+                    {% for key in dataa%}
+                    <td>{{ key }}</td>
+                    {% endfor %}
+                    </tr>
+                              
+                  </table>
+                  
+        </div>
+</body>
+</html>
