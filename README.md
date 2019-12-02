@@ -1,28 +1,31 @@
-# Aplikasi-TST
+# TST - Aplikasi Transportasi
+Aplikasi ini adalah sebuah aplikasi untuk mengecek ketersedian transportasi.\
 Mata Kuliah II3160 - Teknologi Sistem Terintegrasi\
-Firdausi Aditya D - 18217001\
-Daeng Muhammad Yusuf Aqsha Alfarabi - 18217045
+Deployed application: [https://transportasi.herokuapp.com/](https://transportasi.herokuapp.com/)\
+\
+1. Firdausi Aditya Darmawan - 18217001
+2. Daeng Muhammad Yusuf Aqsha Alfarabi - 18217045
 
-## Endpoint
-```bash
-GET '/' = Get home access
-GET '/kota/<city> = Get List Mobil data dari Kota
-```
+**Used API**:
+1. API crawling dari rental mobil Traveloka(https://tst-adit.herokuapp.com/kota/{routes}), repository: https://github.com/fadityad/Tugas-TST
+2. Mapquestapi - API penyedia jarak dari 2 kota (mapquestapi.com)
 
-## Setup(Windows)
-```bash
-# install environment
+## Clone setup (on Windows example)
+
+``` bash
+# install environments
 $ py -3 -m venv venv
 $ venv\Scripts\activate
+(venv) $ pip install -r requirements.txt
 ```
 
-##Running(Windows)
-```bash
-# serve at default https://localhost:5000
-$ venv\Scripts\activate
-(venv) $ py tst.py
+## Running locally (on Windows example)
 
-#leave venv
+``` bash
+# serve at default http://localhost:5000
+$ venv\Scripts\activate
+(venv) $ py main.py
+
+# to leave venv
 (venv) $ deactivate
 ```
-
