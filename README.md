@@ -1,7 +1,7 @@
 # TST - Aplikasi Transportasi
 Aplikasi ini adalah sebuah aplikasi untuk mengecek ketersedian transportasi.\
 Mata Kuliah II3160 - Teknologi Sistem Terintegrasi\
-Deployed application: [https://transportasi.herokuapp.com/](https://transportasi.herokuapp.com/)\
+Deployed application: [https://transportasi.herokuapp.com/](https://transportasi.herokuapp.com/)
 
 1. Firdausi Aditya Darmawan - 18217001
 2. Daeng Muhammad Yusuf Aqsha Alfarabi - 18217045
